@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="description" content="TODO Application">
+  <meta charset="utf-8">
+  <title>Ultimate TODO List Creator 9000®</title>
+  <script src="todo.js"></script>
+  <link rel="stylesheet" href="todo.css"/>
+</head>
+
+<body>
+
+  <header>
+    <h1>Ultimate TODO List Creator 9000<span class="superscript">&reg;</span></h1>
+  </header>
+
+  <main>
+    <div id="wrapper" class="gradient box">
+
+      <div id="todoArea">
+        <ul id="todoList">
+        </ul>
+      </div>
+
+      <div id="controlsArea">
+        <form>
+          <label for="editor">Enter new:</label>
+          <input type="text" id="editor" class="editor"/>
+          <input type="button" id="buttonAdd" class="button" value="Add" />
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p class="footer">Copyright &copy; 2015 Andras Szoke</p>
+  </footer>
+
+  <script>
+    document.querySelector("#buttonAdd").addEventListener("click", addOrUpdate);
+  </script>
+</body>
+
+</html>
