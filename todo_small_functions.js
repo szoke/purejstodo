@@ -1,6 +1,6 @@
 function addOrUpdate(e) {	
-	var editor = getSingleElement("#editor");
-	var todoList = $("#todoList")[0];	
+	var editor = document.querySelector("#editor");
+	var todoList = document.querySelector("#todoList");	
 	var todos = todoList.querySelectorAll("li");
 	var editedTodo;
 	
@@ -25,20 +25,6 @@ function addOrUpdate(e) {
 	}
 	
 	editor.value = "";
-}
-
-function getSingleElement(selector) {
-	if(typeof selector !== 'string'){
-		throw Exception;
-	}
-	if(selector[0] !== "#"){
-		throw Exception;
-	}	
-	var element = $(selector);
-	if(element.length === 0 || element.length > 1){
-		throw Exception;
-	}	
-	return element.get(0);
 }
 
 function createDateTime() {

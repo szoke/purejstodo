@@ -28,3 +28,12 @@ jQuery
 - JavaScriptre épülő framework
 - JavaScriptre fordul
 - Syntactic sugar
+- $('css-selector').operation
+- $ -> visszaad egy setet, a társa a find('css-selector'), amit hozzá láncolhatunk
+- Animációkat CSS-ből kell csinálni!
+
+HTML 5 Canvas
+-------------
+- Négyszögeket tudunk rajzolni
+- fillRect()
+- strokeRect()
