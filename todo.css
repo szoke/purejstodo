@@ -7,6 +7,13 @@ html {
 h1{
   font-size: 1.7em;
 }
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+li {
+	margin: 5px 0px;
+}
 .superscript{
   vertical-align: super;
   font-size: 0.5em;
@@ -23,15 +30,18 @@ h1{
 .editor{
 	width: 300px;
 }
-.todo-text{
-  padding-right: 10px;
+.todo-element {
+	padding : 2px 4px;
+	border-radius : 3px;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 1px 1px;
 }
 .box {
   width: 450px;
   padding: 10px;
   box-shadow: 1px 1px 1px 1px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .footer{
   font-size:0.7em;

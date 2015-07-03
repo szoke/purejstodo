@@ -13,10 +13,11 @@ function addOrUpdate(e) {
 	}
 		
 	if(typeof editedTodo === 'undefined'){
+		var dateTime = createDateTime();
 		var todoText = createTodoText();
 		var deleteButton = createDeleteButton();
 		var editButton = createEditButton();
-		var todo = createTodo(todoText, deleteButton, editButton);
+		var todo = createTodo(dateTime, todoText, deleteButton, editButton);
 		todoList.appendChild(todo);
 	} else {
 		editedTodo.querySelector(".todo-text").innerHTML = editor.value;
@@ -26,9 +27,17 @@ function addOrUpdate(e) {
 	editor.value = "";
 }
 
+function createDateTime() {
+	var dateTime = document.createElement("span");
+	dateTime.style.marginRight = "2px";
+	dateTime.className = "todo-element";
+	dateTime.innerHTML = moment().format('hh:mm:ss');
+	return dateTime;
+}
+
 function createTodoText() {
 	var todoText = document.createElement("span");
-	todoText.className = "todo-text";
+	todoText.className = "todo-text todo-element";
 	todoText.innerHTML = editor.value;
 	return todoText;
 }
@@ -64,8 +73,9 @@ function createEditButton() {
 	return editButton;
 }
 
-function createTodo(todoText, deleteButton, editButton) {
+function createTodo(dateTime, todoText, deleteButton, editButton) {
 	var todo = document.createElement("li");
+	todo.appendChild(dateTime);
 	todo.appendChild(todoText);
 	todo.appendChild(deleteButton);
 	todo.appendChild(editButton);

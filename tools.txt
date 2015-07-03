@@ -1,0 +1,30 @@
+JavaScript test tools
+---------------------
+Jasmine
+JSHint
+JSLint
+
+AJAX + Comet
+------------
+xmlhttp.open("GET" | "POST",
+			 URL,
+			 true | false -> Default: aszinkron, ha szinkron, akkor a JavaScript futtatása blokkol
+)
+
+Streaming - 1 kérdésre több válasz
+
+Web worker
+----------
+- Minden webworker példány egy új thread az aszinkron thredek között
+- A webworkerek teljesen izoláltak, nincs shared data, az üzenetekben lemásolódnak az adatok
+- A webworkerek nem látják pl. a windowt
+- Kicsit olyan, mint a funkcionális programozás
+- Webworkerben nincs setTimeout(), mert az igazából window.setTimeout()
+- Csak serializálható dolgokat adhatunk át a webworkereknek
+
+jQuery
+------
+- Áthidalta a böngészők közötti különbségeket
+- JavaScriptre épülő framework
+- JavaScriptre fordul
+- Syntactic sugar

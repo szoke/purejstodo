@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <title>Ultimate TODO List Creator 9000®</title>
   <script src="todo.js"></script>
+  <script src="moment.js"></script>
   <link rel="stylesheet" href="todo.css"/>
 </head>
 
@@ -16,7 +17,7 @@
   </header>
 
   <main>
-    <div id="wrapper" class="gradient box">
+    <div id="box" class="gradient box">
 
       <div id="todoArea">
         <ul id="todoList">
@@ -37,7 +38,7 @@
   <footer>
     <p class="footer">Copyright &copy; 2015 Andras Szoke</p>
   </footer>
-
+  
   <script>
     document.querySelector("#buttonAdd").addEventListener("click", addOrUpdate);
   </script>
