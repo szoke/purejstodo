@@ -1,0 +1,10 @@
+Validation
+----------
+- required HTML attribútum
+- pattern="REGEXP" HTML attribútum
+
+- :valid és :invalid CSS szelektorok
+	input:valid {
+		background-color: green;
+	}
+- :required
